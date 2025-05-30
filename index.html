@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>JS</title>
+  </head>
+  <body>
+    <div class="currency-convert-container">
+      <div class="inner-container">
+        <div class="box">
+          <div class="inner-box">
+            <h2>Currency Converter</h2>
+            <form action="" class="form">
+              <div class="input-field">
+                <label for="amount">Enter Amount</label>
+                <input type="text" name="amount" id="amount" value="1" />
+              </div>
+              <div class="select-options">
+                <div class="flex-section">
+                  <div class="from-section">
+                    <h4>From</h4>
+                    <div class="from">
+                      <img
+                        src="https://flagsapi.com/US/flat/64.png"
+                        alt=""
+                        width="30px"
+                      />
+                      <select name="from" id="fromSelect"></select>
+                    </div>
+                  </div>
+                  <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                  <div class="to-section">
+                    <h4>To</h4>
+                    <div class="to">
+                      <img
+                        src="https://flagsapi.com/PK/flat/64.png"
+                        alt=""
+                        width="30px"
+                      />
+                      <select name="to" id="toSelect"></select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="currency-value">
+                <p class="rate-value">1USD = 280PKR</p>
+              </div>
+              <button type="submit" id="btn">Get Exchange Rate</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="codes.js"></script>
+    <script src="currencyConvert.js"></script>
+  </body>
+</html>
